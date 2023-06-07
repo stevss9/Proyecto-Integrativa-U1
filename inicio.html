@@ -1,0 +1,158 @@
+<!--Completado-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MELUFEST Bienes y Raices Grupo5</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./static/css/styles.css">
+    <script src="./static/javascript/script.js"></script>
+    <script>
+        function showSuccessAlert() {
+            alert("Mensaje enviado correctamente");
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+            <a href="#home" class="w3-bar-item w3-button"><b>MELUFEST</b> Bienes y Raices</a>
+            <div class="w3-right w3-hide-small">
+                <a href="#projects" class="w3-bar-item w3-button">Proyectos</a>
+                <a href="#about" class="w3-bar-item w3-button">Acerca de Nosotros</a>
+                <a href="#contact" class="w3-bar-item w3-button">Contactanos</a>
+                <a href="#Ingresar" class="w3-bar-item w3-button"
+                    style="color: green;"><strong>Ingresar</strong></a><br>
+                <dark-mode-button>DarkMode</dark-mode-button>
+                <text-size-button change-amount="2"><button class="w3-button w3-light-grey">Aumentar
+                        Tamano</button></text-size-button>
+                <text-size-button change-amount="-2"><button class="w3-button w3-light-grey">Disminuir
+                        Tamano</button></text-size-button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+        <img class="w3-image" src="https://www.inversionsimple.com/wp-content/uploads/2021/09/Portada-bienes-raices.jpg"
+            alt="Architecture" width="1500" height="800">
+        <div class="w3-display-middle w3-margin-top w3-center">
+            <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>MELUFEST</b></span>
+                <span class="w3-hide-small w3-text-light-grey">Bienes y Raices</span>
+            </h1>
+        </div>
+    </header>
+    <!--Fin-->
+
+    <!-- Page content -->
+    <div class="w3-content w3-padding" style="max-width:1564px">
+
+        <!-- Project Section -->
+        <div class="w3-container w3-padding-32" id="projects">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Proyectos</h3>
+        </div>
+        <section>
+            <div class="w3-row-padding">
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
+                        <img src="https://summerhouse24.co.uk/wp-content/uploads/2023/01/garden-room-grace-alu-1024x683.jpg"
+                            alt="House" style="width:100%">
+                    </div>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
+                        <img src="https://st.hzcdn.com/simgs/afd1745b0164c256_14-6933/home-design.jpg" alt="House"
+                            style="width:100%">
+                    </div>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
+                        <img src="https://thinkwood-wordpress.s3.amazonaws.com/wp-content/uploads/2021/09/22160509/SHED_Black-Sheep-Remodel_13-1-scaled.jpg"
+                            alt="House" style="width:100%">
+                    </div>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
+                        <img src="https://markstewart.com/wp-content/uploads/2022/06/RUSTIC-BARN-HOUSE-PLAN-NATURAL-FREEDOM-PLAN-MB-3247-REAR-VIEW-scaled.jpg"
+                            alt="House" style="width:100%">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section -->
+        <custom-about></custom-about>
+        <!--Fin-->
+
+        <div class="w3-row-padding w3-grayscale">
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <template id="custom-component-template">
+                    <div class="custom-component">
+                        <img id="custom-component-image" style="width:90%" />
+                        <h3 id="custom-component-title"></h3>
+                        <p id="custom-component-text1"></p>
+                        <p id="custom-component-text-info"></p>
+                        <a id="custom-component-link1"></a><br><br>
+                        <a id="custom-component-link2"></a><br><br>
+                        <button id="custom-component-button"></button>
+                    </div>
+                </template>
+                <custom-component title="Steveen Sinchiguano" text1="CEO & Founder" text-info=""
+                    image-src="./static/images/perfil.png" link1-url="https://facebook.com" link1-label="Facebook"
+                    link2-url="https://youtube.com" link2-label="Youtube"
+                    button-label="Boton de Steveen"></custom-component>
+            </div>
+
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <custom-component title="Fernando Masache" text1="Arquitecto" text-info=""
+                    image-src="./static/images/perfil.png" link1-url="https://instagram.com" link1-label="Instagram"
+                    link2-url="https://github.com" link2-label="Github"
+                    button-label="Boton de Fernando"></custom-component>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <custom-component title="Lucy Mosquera" text1="Ingeniera" text-info=""
+                    image-src="./static/images/perfilm.png" link1-url="https://messenger.com" link1-label="Messenger"
+                    link2-url="https://whatsapp.com" link2-label="Whatsapp"
+                    button-label="Boton de Lucy"></custom-component>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <custom-component title="Mercy Arrobo" text1="Diseñadora" text-info=""
+                    image-src="./static/images/perfilm.png" link1-url="https://reddit.com" link1-label="Reddit"
+                    link2-url="https://youtube.com" link2-label="Youtube"
+                    button-label="Boton de Mercy"></custom-component>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="w3-container w3-padding-32" id="contact">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contactanos</h3>
+            <p>Pongamonos en contacto y hablemos de su proximo proyecto.</p>
+            <form action="" method="post" onsubmit="showSuccessAlert()">
+                <input class="w3-input w3-border" type="text" placeholder="Nombre" required name="Name">
+                <input class="w3-input w3-section w3-border" type="email" placeholder="Correo Electronico" required
+                    name="Email">
+                <input class="w3-input w3-section w3-border" type="text" placeholder="Asunto" required name="Subject">
+                <input class="w3-input w3-section w3-border" type="text" placeholder="Comentario" required
+                    name="Comment">
+                <button class="w3-button csa w3-section" type="submit">
+                    <i class="fa fa-paper-plane csa"></i> Enviar Mensaje
+                </button>
+            </form>
+        </div>
+        <!-- End page content -->
+    </div>
+    <script src="./static/javascript/componente.js"></script>
+    <!-- Footer -->
+    <custom-footer></custom-footer>
+    <!--Fin-->
+
+</body>
+
+</html>
